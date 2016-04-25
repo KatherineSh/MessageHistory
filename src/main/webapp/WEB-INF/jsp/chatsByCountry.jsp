@@ -19,7 +19,7 @@
     	        </c:forEach>
     	    };
       var array = Object.keys(data).map(function (key) {return [key, data[key]]});
-      array.unshift(['Country', 'Messages Count']);
+      array.unshift(['Country', 'Chat Count']);
   	    
       console.log(array);
       
@@ -29,7 +29,7 @@
         );
 
         var options = {
-          title: 'Message count by country'
+          title: 'Chat count by country'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
